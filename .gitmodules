@@ -28,3 +28,9 @@
 [submodule "libs/asio"]
 	path = libs/asio
 	url = https://github.com/quyen194/asio.git
+[submodule "ElefantBlasterServer"]
+	path = ElefantBlasterServer
+	url = https://github.com/quyen194/ElefantBlasterServer.git
+[submodule "ElefantBlasterClient"]
+	path = ElefantBlasterClient
+	url = https://github.com/quyen194/ElefantBlasterClient.git

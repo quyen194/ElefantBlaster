@@ -1,13 +1,13 @@
 [
     {
         "input": [
-            "BomberManProto/client_msg.proto",
-            "BomberManProto/server_msg.proto"
+            "ElefantBlasterProto/client_msg.proto",
+            "ElefantBlasterProto/server_msg.proto"
         ],
-        "cache": "BomberManProto/.cache.json",
+        "cache": "ElefantBlasterProto/.cache.json",
         "output": [
-            "BomberManClient/src/network/protocols",
-            "BomberManServer/src/network/protocols"
+            "ElefantBlasterClient/src/network/protocols",
+            "ElefantBlasterServer/src/network/protocols"
         ]
     }
 ]
