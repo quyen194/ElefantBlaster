@@ -43,6 +43,30 @@
             }
         },
         {
+            "name": "WSL-x64-Debug",
+            "displayName": "WSL-x64-Debug (GCC 13.3.0 x86_64-linux-gnu)",
+            "description": "Using compilers: C = /usr/bin/gcc, CXX = /usr/bin/g++",
+            "binaryDir": "${workspaceFolder}/ElefantBlaster/out/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_INSTALL_PREFIX": "${workspaceFolder}/ElefantBlaster/out/install/${presetName}",
+                "CMAKE_C_COMPILER": "/usr/bin/gcc",
+                "CMAKE_CXX_COMPILER": "/usr/bin/g++",
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        },
+        {
+            "name": "WSL-x64-Release",
+            "displayName": "WSL-x64-Release (GCC 13.3.0 x86_64-linux-gnu)",
+            "description": "Using compilers: C = /usr/bin/gcc, CXX = /usr/bin/g++",
+            "binaryDir": "$env{HOME}/ElefantBlaster/out/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_INSTALL_PREFIX": "$env{HOME}/ElefantBlaster/out/install/${presetName}",
+                "CMAKE_C_COMPILER": "/usr/bin/gcc",
+                "CMAKE_CXX_COMPILER": "/usr/bin/g++",
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        },
+        {
             "name": "Emscripten-Web-Debug",
             "generator": "Ninja",
             "description": "Emscripten Debug (Web)",
@@ -79,6 +103,14 @@
         {
             "name": "x64-Release",
             "configurePreset": "x64-Release"
+        },
+        {
+            "name": "WSL-x64-Debug",
+            "configurePreset": "WSL-x64-Debug"
+        },
+        {
+            "name": "WSL-x64-Release",
+            "configurePreset": "WSL-x64-Release"
         },
         {
             "name": "Web-Debug",
