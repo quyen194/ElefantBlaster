@@ -37,3 +37,6 @@
 [submodule "libs/abseil-cpp"]
 	path = libs/abseil-cpp
 	url = https://github.com/quyen194/abseil-cpp.git
+[submodule "libs/aries_base"]
+	path = libs/aries_base
+	url = https://github.com/quyen194/aries_base.git
