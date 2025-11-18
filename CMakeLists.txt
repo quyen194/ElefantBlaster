@@ -69,4 +69,7 @@ endif()
 
 # Include sub-projects.
 add_subdirectory("ElefantBlasterClient")
-add_subdirectory("ElefantBlasterServer")
+
+if(NOT EMSCRIPTEN AND NOT ANDROID)
+    add_subdirectory("ElefantBlasterServer")
+endif()
