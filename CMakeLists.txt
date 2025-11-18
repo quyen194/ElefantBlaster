@@ -6,7 +6,8 @@ cmake_minimum_required (VERSION 3.12)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-project ("ElefantBlaster" LANGUAGES C CXX)
+set(PROJECT_NAME "ElefantBlaster")
+project (${PROJECT_NAME} LANGUAGES C CXX)
 
 # ========================================
 # Run proto_generate.py during configure
