@@ -34,3 +34,6 @@
 [submodule "ElefantBlasterClient"]
 	path = ElefantBlasterClient
 	url = https://github.com/quyen194/ElefantBlasterClient.git
+[submodule "libs/abseil-cpp"]
+	path = libs/abseil-cpp
+	url = https://github.com/quyen194/abseil-cpp.git
