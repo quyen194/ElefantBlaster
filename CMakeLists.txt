@@ -10,6 +10,15 @@ set(PROJECT_NAME "ElefantBlaster")
 project (${PROJECT_NAME} LANGUAGES C CXX)
 
 # ========================================
+# Testing Configuration
+# ========================================
+option(BUILD_TESTING "Build tests for the project and libraries" ON)
+
+if(BUILD_TESTING)
+    enable_testing()
+endif()
+
+# ========================================
 # Run proto_generate.py during configure
 # ========================================
 find_package(Python3 REQUIRED COMPONENTS Interpreter)
