@@ -91,3 +91,8 @@ git config --global --add safe.directory "${MNT_ROOT}/libs/websocketpp"
 cd "${MNT_ROOT}/libs/websocketpp"
 git worktree add "${HOME_ROOT}/libs/websocketpp" wsl
 git config --global --add safe.directory "${HOME_ROOT}/libs/websocketpp"
+
+git config --global --add safe.directory "${MNT_ROOT}/libs/spdlog"
+cd "${MNT_ROOT}/libs/spdlog"
+git worktree add "${HOME_ROOT}/libs/spdlog" wsl
+git config --global --add safe.directory "${HOME_ROOT}/libs/spdlog"
