@@ -1,10 +1,12 @@
-# CMakeList.txt : Top-level CMake project file, do global configuration
-# and include sub-projects here.
+# CMakeList.txt : CMake project for ElefantBlaster.
+# Include source and define project specific logic here.
 #
-cmake_minimum_required (VERSION 3.12)
+cmake_minimum_required (VERSION 3.20)
 
-set(CMAKE_CXX_STANDARD 20)
+# C++ standard
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
 
 set(PROJECT_NAME "ElefantBlaster")
 project (${PROJECT_NAME} LANGUAGES C CXX)
