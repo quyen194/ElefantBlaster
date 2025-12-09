@@ -83,4 +83,5 @@ add_subdirectory("ElefantBlasterClient")
 
 if(NOT EMSCRIPTEN AND NOT ANDROID)
     add_subdirectory("ElefantBlasterServer")
+    add_subdirectory("ElefantBlasterServerInterface")
 endif()

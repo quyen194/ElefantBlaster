@@ -43,3 +43,6 @@
 [submodule "libs/imgui"]
 	path = libs/imgui
 	url = https://github.com/quyen194/imgui.git
+[submodule "ElefantBlasterServerInterface"]
+	path = ElefantBlasterServerInterface
+	url = https://github.com/quyen194/ElefantBlasterServerInterface.git
