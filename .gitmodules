@@ -40,3 +40,6 @@
 [submodule "libs/aries_base"]
 	path = libs/aries_base
 	url = https://github.com/quyen194/aries_base.git
+[submodule "libs/imgui"]
+	path = libs/imgui
+	url = https://github.com/quyen194/imgui.git

@@ -91,3 +91,8 @@ git config --global --add safe.directory "${MNT_ROOT}/libs/websocketpp"
 cd "${MNT_ROOT}/libs/websocketpp"
 git worktree add "${HOME_ROOT}/libs/websocketpp" wsl
 git config --global --add safe.directory "${HOME_ROOT}/libs/websocketpp"
+
+git config --global --add safe.directory "${MNT_ROOT}/libs/imgui"
+cd "${MNT_ROOT}/libs/imgui"
+git worktree add "${HOME_ROOT}/libs/imgui" wsl
+git config --global --add safe.directory "${HOME_ROOT}/libs/imgui"
