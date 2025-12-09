@@ -32,15 +32,20 @@ cd "${MNT_ROOT}/ElefantBlasterServer"
 git worktree add "${HOME_ROOT}/ElefantBlasterServer" wsl
 git config --global --add safe.directory "${HOME_ROOT}/ElefantBlasterServer"
 
-git config --global --add safe.directory "${MNT_ROOT}/libs/abseil-cpp"
-cd "${MNT_ROOT}/libs/abseil-cpp"
-git worktree add "${HOME_ROOT}/libs/abseil-cpp" wsl
-git config --global --add safe.directory "${HOME_ROOT}/libs/abseil-cpp"
-
 git config --global --add safe.directory "${MNT_ROOT}/libs/aries_base"
 cd "${MNT_ROOT}/libs/aries_base"
 git worktree add "${HOME_ROOT}/libs/aries_base" wsl
 git config --global --add safe.directory "${HOME_ROOT}/libs/aries_base"
+
+git config --global --add safe.directory "${MNT_ROOT}/libs/aries_base/third_party/spdlog"
+cd "${MNT_ROOT}/libs/aries_base/third_party/spdlog"
+git worktree add "${HOME_ROOT}/libs/aries_base/third_party/spdlog" wsl
+git config --global --add safe.directory "${HOME_ROOT}/libs/aries_base/third_party/spdlog"
+
+git config --global --add safe.directory "${MNT_ROOT}/libs/abseil-cpp"
+cd "${MNT_ROOT}/libs/abseil-cpp"
+git worktree add "${HOME_ROOT}/libs/abseil-cpp" wsl
+git config --global --add safe.directory "${HOME_ROOT}/libs/abseil-cpp"
 
 git config --global --add safe.directory "${MNT_ROOT}/libs/asio"
 cd "${MNT_ROOT}/libs/asio"
