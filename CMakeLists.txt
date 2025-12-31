@@ -11,6 +11,10 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 set(PROJECT_NAME "ElefantBlaster")
 project (${PROJECT_NAME} LANGUAGES C CXX)
 
+# Enable ccache if available
+find_program(CCACHE_PROGRAM ccache)
+set(CMAKE_CXX_COMPILER_LAUNCHER ccache)
+
 # ========================================
 # Testing Configuration
 # ========================================
