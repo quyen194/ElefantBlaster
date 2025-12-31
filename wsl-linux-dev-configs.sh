@@ -106,3 +106,8 @@ git config --global --add safe.directory "${MNT_ROOT}/libs/imgui"
 cd "${MNT_ROOT}/libs/imgui"
 git worktree add "${HOME_ROOT}/libs/imgui" wsl
 git config --global --add safe.directory "${HOME_ROOT}/libs/imgui"
+
+git config --global --add safe.directory "${MNT_ROOT}/libs/wxWidgets"
+cd "${MNT_ROOT}/libs/wxWidgets"
+git worktree add "${HOME_ROOT}/libs/wxWidgets" wsl
+git config --global --add safe.directory "${HOME_ROOT}/libs/wxWidgets"
