@@ -115,9 +115,9 @@ def create_gitignore(output_dir):
     gitignore_content += "*.pb.h\n"
     gitignore_content += "# .gitignore itself\n"
     gitignore_content += ".gitignore\n"
-    
+
     if not gitignore_path.exists():
-        with open(gitignore_path, "w", encoding="utf-8") as f:
+        with open(gitignore_path, "w", encoding="utf-8", newline="\n") as f:
             f.write(gitignore_content)
         print(f"[CREATE] {gitignore_path}")
     else:
