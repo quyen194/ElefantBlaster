@@ -65,6 +65,30 @@ if(NOT EMSCRIPTEN)
     add_library(websocketpp::websocketpp ALIAS websocketpp_interface)
 endif()
 
+if(EMSCRIPTEN)
+    # aries_base (Common base library)
+    set(ARIES_BASE_BUILD_EXAMPLES OFF)
+    set(ARIES_BASE_BUILD_TESTS OFF)
+    set(ARIES_DB_ENABLE OFF)
+    FetchContent_Declare(
+        aries_base
+        SOURCE_DIR ${CMAKE_SOURCE_DIR}/libs/aries_base
+    )
+    FetchContent_MakeAvailable(aries_base)
+else()
+    # aries_base (Common base library)
+    set(ARIES_BASE_BUILD_EXAMPLES OFF)
+    set(ARIES_BASE_BUILD_TESTS OFF)
+    set(ARIES_DB_ENABLE_MSSQL OFF)
+    set(ARIES_DB_ENABLE_MYSQL OFF)
+    set(ARIES_DB_ENABLE_POSTGRES OFF)
+    FetchContent_Declare(
+        aries_base
+        SOURCE_DIR ${CMAKE_SOURCE_DIR}/libs/aries_base
+    )
+    FetchContent_MakeAvailable(aries_base)
+endif()
+
 # Include sub-projects.
 add_subdirectory("ElefantBlasterCommon")
 
