@@ -1,8 +1,0 @@
-
-syntax = "proto3";
-
-package bomberman;
-
-message ServerMsg {
-    int32 id = 1;
-}

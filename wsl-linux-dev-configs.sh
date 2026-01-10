@@ -37,6 +37,11 @@ cd "${MNT_ROOT}/ElefantBlasterServerInterface"
 git worktree add "${HOME_ROOT}/ElefantBlasterServerInterface" wsl
 git config --global --add safe.directory "${HOME_ROOT}/ElefantBlasterServerInterface"
 
+git config --global --add safe.directory "${MNT_ROOT}/ElefantBlasterCommon"
+cd "${MNT_ROOT}/ElefantBlasterCommon"
+git worktree add "${HOME_ROOT}/ElefantBlasterCommon" wsl
+git config --global --add safe.directory "${HOME_ROOT}/ElefantBlasterCommon"
+
 git config --global --add safe.directory "${MNT_ROOT}/libs/aries_base"
 cd "${MNT_ROOT}/libs/aries_base"
 git worktree add "${HOME_ROOT}/libs/aries_base" wsl

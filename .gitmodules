@@ -49,3 +49,6 @@
 [submodule "ElefantBlasterServerInterface"]
 	path = ElefantBlasterServerInterface
 	url = https://github.com/quyen194/ElefantBlasterServerInterface.git
+[submodule "ElefantBlasterCommon"]
+	path = ElefantBlasterCommon
+	url = https://github.com/quyen194/ElefantBlasterCommon.git

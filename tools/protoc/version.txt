@@ -1,7 +1,0 @@
-version: v30.2
-
-source:
-https://github.com/quyen194/protobuf/tree/v30.2
-
-binaries release:
-https://github.com/protocolbuffers/protobuf/releases/tag/v30.2
