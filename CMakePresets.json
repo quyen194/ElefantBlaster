@@ -93,7 +93,36 @@
                 "CMAKE_EXECUTABLE_SUFFIX": ".html",
                 "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}"
             }
+        },
+        {
+            "name": "Android-arm64-Release",
+            "generator": "Ninja",
+            "description": "Android arm64 Release",
+            "binaryDir": "${sourceDir}/out/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release",
+                "CMAKE_TOOLCHAIN_FILE": "${env:ANDROID_NDK_HOME}/build/cmake/android.toolchain.cmake",
+                "ANDROID_ABI": "arm64-v8a",
+                "ANDROID_PLATFORM": "android-21",
+                "ANDROID_STL": "c++_shared",
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}"
+            }
+        },
+        {
+            "name": "Android-arm64-Debug",
+            "generator": "Ninja",
+            "description": "Android arm64 Debug",
+            "binaryDir": "${sourceDir}/out/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_TOOLCHAIN_FILE": "${env:ANDROID_NDK_HOME}/build/cmake/android.toolchain.cmake",
+                "ANDROID_ABI": "arm64-v8a",
+                "ANDROID_PLATFORM": "android-21",
+                "ANDROID_STL": "c++_shared",
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}"
+            }
         }
+
     ],
     "buildPresets": [
         {
@@ -119,6 +148,16 @@
         {
             "name": "Web-Release",
             "configurePreset": "Emscripten-Web-Release"
+        },
+        {
+            "name": "Android-arm64-Release",
+            "configurePreset": "Android-arm64-Release",
+            "targets": [ "ElefantBlasterClientApk" ]
+        },
+        {
+            "name": "Android-arm64-Debug",
+            "configurePreset": "Android-arm64-Debug",
+            "targets": [ "ElefantBlasterClientApk" ]
         }
     ]
 }

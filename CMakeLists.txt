@@ -12,8 +12,10 @@ set(PROJECT_NAME "ElefantBlaster")
 project (${PROJECT_NAME} LANGUAGES C CXX)
 
 # Enable ccache if available
-find_program(CCACHE_PROGRAM ccache)
-set(CMAKE_CXX_COMPILER_LAUNCHER ccache)
+if (NOT ANDROID)
+    find_program(CCACHE_PROGRAM ccache)
+    set(CMAKE_CXX_COMPILER_LAUNCHER ccache)
+endif()
 
 # ========================================
 # Testing Configuration
@@ -26,7 +28,7 @@ endif()
 
 include(FetchContent)
 
-if(NOT EMSCRIPTEN)
+if(NOT EMSCRIPTEN AND NOT ANDROID)
     # OpenSSL
     find_package(OpenSSL REQUIRED)
 
