@@ -14,7 +14,9 @@ project (${PROJECT_NAME} LANGUAGES C CXX)
 # Enable ccache if available
 if (NOT ANDROID)
     find_program(CCACHE_PROGRAM ccache)
-    set(CMAKE_CXX_COMPILER_LAUNCHER ccache)
+    if(CCACHE_PROGRAM)
+        set(CMAKE_CXX_COMPILER_LAUNCHER ${CCACHE_PROGRAM})
+    endif()
 endif()
 
 # ========================================
